@@ -42,8 +42,6 @@ pessoa.imprimirAlgo();
 
 //--------------------------------------------------
 
-console.clear();
-
 //* Para pegar cada atributo isolado
 
 //Nesse caso você diz: de dentro do objeto pessoa pegar o atributo nome
@@ -53,3 +51,19 @@ const { nome, hobbies} = pessoa;
 console.log(nome);
 console.log(hobbies);
 console.log(pessoa);
+
+
+//---------------------------------------------------
+//* Sintaxe de Abreviação de Propriedades.
+//Se você tem variáveis com nomes que correspondem aos nomes das propriedades que deseja criar no objeto, pode usar a sintaxe de abreviação para simplificar o código:
+
+const idade = 30;
+const cidade = 'Campinas - SP';
+
+const objeto = {
+    idade,    // Abreviação para- idade: idade: idade
+    cidade    // Abreviação para- cidade: cidade: cidade
+};
+
+console.log(objeto.idade);
+

@@ -1,4 +1,6 @@
 
+//!Definição da função 
+
 //*Sem tamplate
 function saudacao(nomeDoEstudante) {
     console.log('Olá, ', nomeDoEstudante); 
@@ -44,5 +46,35 @@ const resultado = somar(2 ,3);
 console.log(resultado);
 console.log(resultado / 10);
 
-
+//-----------------------------------------------------
 //* Funções anônimas
+
+const dobroDoNumero = function(numero){
+    return numero * 2;
+}
+
+const dobro = dobroDoNumero(2);
+console.log(dobro);
+
+
+//-----------------------------------------------------
+//* Arrow Functions
+
+const subtrair = (n1, n2) => {
+    return n1 - n2;
+}
+const res = subtrair(10 ,5);
+
+
+//*Simplificado
+
+const multiplica = (n1, n2) => n1 * n2;
+
+
+const resSubtrair = subtrair(10, 5);
+const resMultiplica = multiplica(10, 5);
+
+// Exibição dos resultados
+console.log('Resultado da subtração:', resSubtrair);
+console.log('Resultado da multiplicação:', resMultiplica);
+
