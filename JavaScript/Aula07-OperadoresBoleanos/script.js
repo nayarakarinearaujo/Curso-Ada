@@ -53,7 +53,7 @@ console.log(idadePessoa3 >= 18 && idadePessoa4 >= 18);
 //--------------------------------------------------------------
 
 //Operador or || (ou)
-console.log(idadePessoa1 >= 18 || idadePessoa2 >= 18);
+console.log(idadePessoa3 >= 18 || idadePessoa4 >= 18);
 //Nesse caso será true. 
 //Sempre retorna verdadeiro, basta um ou outro for verdadeiro para retornar true
 
