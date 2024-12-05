@@ -1,7 +1,11 @@
 
 //* Laços condicionais
+/*
+Estruturas de repetição Não controlada
+Útil quando deseja fazer uma repetição mas não sabe quantas vezes será executada
+*/
 
-//!EXEMPLO 1
+//!EXEMPLO 1: While
 
 const prompt = require ('readline-sync');
 
