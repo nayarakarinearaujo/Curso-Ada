@@ -11,9 +11,13 @@ const mensagem = idade >= 18 ? "Maior de Idade" : "Menor de idade";
 console.log(mensagem);
 
 //ternario dentro de outro ternário
+let idade1 = 8;
 const mensagem2 =
-  idade >= 18
+  idade1 >= 18
     ? "Maior de idade"
-    : idade >= 16
+    : idade1 >= 16
     ? "Olá pode votar"
     : "Não pode votar";
+
+console.log(mensagem2);
+

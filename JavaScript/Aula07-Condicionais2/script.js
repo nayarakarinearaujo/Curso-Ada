@@ -3,7 +3,7 @@
 
 //Muito útil quando sua variável possui valores específicos
 
-const permissoes = "banana"; // 'aluno' || 'professor' || 'adm'
+const permissoes = 'aluno'; // 'aluno' || 'professor' || 'adm'
 
 
 switch(permissoes) {

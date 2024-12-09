@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas dos Alunos</title>
+</head>
+<body>
+  <h1>Calculadora de Média das Notas</h1>
+  <script>
+    let notaDoAluno = Number(prompt("Informe a nota do aluno: "));
+
+    let somaDasNotas = 0; // Acumulador
+    let qtdNotasValidas = 0; // Contador de notas válidas
+
+    while (notaDoAluno >= 0) {
+      somaDasNotas += notaDoAluno;
+      qtdNotasValidas++;
+
+      notaDoAluno = Number(prompt("Informe a próxima nota (ou um valor negativo para encerrar): "));
+    }
+
+    document.write("<p>A soma de todas as notas: " + somaDasNotas + "</p>");
+    document.write("<p>Quantidade de notas válidas: " + qtdNotasValidas + "</p>");
+    document.write(
+      "<p>A média das notas dos alunos: " + 
+      (qtdNotasValidas > 0 ? (somaDasNotas / qtdNotasValidas).toFixed(2) : "Nenhuma nota válida foi informada.") + 
+      "</p>"
+    );
+  </script>
+</body>
+</html>
