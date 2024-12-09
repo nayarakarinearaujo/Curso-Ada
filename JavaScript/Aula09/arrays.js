@@ -40,39 +40,47 @@ console.log(pessoa.length);
 const numero = [40, 34, 58, 78, 96, 97];
 
 //Nesse caso ele vai imprimir todos arrays
+console.log("Todo array:")
 console.log(numero.slice(0));
 
 console.log('-----------------------------')
 
 //Nesse caso ele vai imprimir na posição 0 e 1 (Explicação ele vai imprimir o que for menor que 2)
+console.log("Posição no array: ")
 console.log(numero.slice(0, 2));
 
 console.log('-----------------------------')
 
 //*Adicionando elementos no final do Array
+console.log("Adicionando no final no array: ")
 numero.push(0);
 console.log(numero);
 
 console.log('-----------------------------')
 
 //*Adicionando elementos no início do Array
+console.log("Adicionando no começo no array: ")
 numero.unshift(-9);
 console.log(numero);
 
 console.log('-----------------------------')
 
 //*Remover elemento que está no final do Array, no caso é o 0
+console.log("Remover elemento no final do array: ")
 numero.pop();
 console.log(numero);
 
 console.log('-----------------------------')
 
 //*Remover o primeiro elementos do Array, no caso é o -9
+console.log("Remover o primeiro elemento do array: ")
 numero.shift();
 console.log(numero);
 
 console.log('-----------------------------')
 //Será que o elemento 20 existe no array numero
+//Buscando elemento dentro do array
+console.log("Buscando elemento dentro do array: ")
 console.log(numero.includes(20));
 console.log(numero.includes(40));
 
