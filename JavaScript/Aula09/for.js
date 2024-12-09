@@ -1,4 +1,6 @@
 
+//! laços numéricos
+
 const prompt = require('readline-sync');
 
 //Expressão 1: inicializaçãi da variável de controle
@@ -16,9 +18,9 @@ const prompt = require('readline-sync');
 //For permite que declare a variável dentro dele, porém será usado apenas dentro do for
 
 
-// for ( let i = 0; i <= 10; i++) {
-//     console.log(i);
-// }
+for ( let i = 0; i <= 10; i++) {
+    console.log(i);
+}
 
 //Lmpando o console
 // console.clear();

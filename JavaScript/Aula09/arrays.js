@@ -10,7 +10,7 @@ const notasAluno = [10, 8, 5];
 console.log(notasAluno[0]);
 
 //Definindo array com várias informações
-const pessoa = ["Nayara", 31, "Campinas", "Desenvolvedora Full Stack - Júnior"];
+const pessoa = ["Nayara", 31, "Campinas", "Estagiária em Desenvolvimento Front-End", "ProBrain"];
 
 //Mostrar todas as informações dentro do Array
 for (let i = 0; i < pessoa.length; i++) {
