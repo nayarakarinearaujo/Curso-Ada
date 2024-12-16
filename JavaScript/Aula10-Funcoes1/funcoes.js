@@ -2,7 +2,7 @@
 //!Definição da função 
 
 //*Sem tamplate
-function saudacao(nomeDoEstudante) {
+function saudacao(nomeDoEstudante, curso) {
     console.log('Olá, ', nomeDoEstudante); 
     console.log('Seja bem vindo(a) ao curso Front End com React!')
 }
@@ -25,7 +25,7 @@ saudacao("Nayara", "Front-end em React"); //Chamada da função saudação
 
 
 //* Usando função return
-//Nesse caso se n]ao for passado o parametro do curso na chamada da função, podemos definir na função
+//Nesse caso se não for passado o parametro do curso na chamada da função, podemos definir na função
 
 //Caso for passar o parametro na chamada da função ele vai sobre escrever o que foi definido na função
 function saudacao(nomeDoEstudante, curso = "Front-end em React") {
@@ -78,3 +78,17 @@ const resMultiplica = multiplica(10, 5);
 console.log('Resultado da subtração:', resSubtrair);
 console.log('Resultado da multiplicação:', resMultiplica);
 
+
+const names = ["Daniel", "Maria", "Marta", "Juca", "João", "Jéssica"]
+
+const namesCount = names.reduce((count, nomeAtual) => {
+    const firstLetter = nomeAtual[0].toLowerCase()
+    if(count[firstLetter]){
+        count[firstLetter]++
+    } else {
+        count[firstLetter] = 1
+    }
+    return count
+}, {})
+
+console.log(namesCount);
