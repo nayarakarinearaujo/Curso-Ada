@@ -79,7 +79,7 @@ const indicePessoaEncontrada = pessoas2.findIndex((pessoa) => {
   console.log(`A pessoa encontrada está no índice: ${indicePessoaEncontrada}`);
 
 
-// * 4. Array.prototype.ever(): verificar se todos os
+// * 4. Array.prototype.every(): verificar se todos os
 // *    elementos de um array seguem determinada condição retornada pela função
 
 // Nesse exemplo ele vai conferir dentro do array se todos os elementos do array
@@ -88,11 +88,12 @@ const numeros = [40, 34, 67, 89, 23, 10];
 const todosPositivos = numeros.every((elemento) => elemento > 0);
 console.log(todosPositivos);
 
+
 //Array de objetos
 const pessoas = [
   {
     nome: "Davi Henrique",
-    idade: 34,
+    idade: 14,
   },
 
   {
@@ -101,14 +102,15 @@ const pessoas = [
   },
 ];
 
-const todosMaioresDeIdade = pessoas.every((pessoa) => pessoa.idade > 18);
+//Ele vai percorrer o array de pessoas e verificar se todos tem idade >= que 18
+const todosMaioresDeIdade = pessoas.every((pessoa) => pessoa.idade >= 18);
 console.log(todosMaioresDeIdade);
 
-//* Array.prototyp.some(): verificar se algum elemento do array torna
-//* verdadeira uma determinada condição retornada pela função
+//*  Array.prototyp.some(): verificar se algum elemento do array satisfaz
+//*  aquela função, se algum elemento retorna verdadeiro
 
 const numeros2 = [-1, 3, 7, -3, 5];
 
-//Nesse caso ele vaiverificar se todos os números são positivos
+//Nesse caso ele vai verificar se tem algum número que é positivo
 const retorno = numeros2.some((numero) => numero > 0);
 console.log(retorno);
