@@ -32,7 +32,7 @@ numbers.forEach((item, index, arrayCompleto) => {
 
 // * 2. Array.prototype.find(): útil para encontrar um elemento dentro do array
 
-// Quando se ele encontrar o primeiro elemento, ele retorna esse elemento que ele encontrou.
+// Quando ele encontrar o primeiro elemento, ele retorna esse elemento que ele encontrou.
 const number = [47, 64, 57, 78, 28, 15];
 const encontrado = number.find((item) => {
   return item > 30;
@@ -69,7 +69,7 @@ const pessoas2 = [
  
 
 // * 3. Array.prototype.findIndex(): Ele é muito parecido com o find( ), 
-// *    porém retorna o índece do elemento encontrado
+// *    porém retorna o índice do elemento encontrado
 
 console.log("-------findIndex()--------");
 
