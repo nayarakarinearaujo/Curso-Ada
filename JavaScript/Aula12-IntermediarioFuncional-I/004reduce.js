@@ -80,5 +80,3 @@ const totalFormatado = totalAPagar.toFixed(2);
 
 console.log(`O valor total a pagar é R$: ${totalFormatado}`);
 
-
-
